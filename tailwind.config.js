@@ -17,6 +17,10 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      rotate: ['group-hover'],
+    }
+  },
   plugins: [require('@tailwindcss/typography')],
 };
