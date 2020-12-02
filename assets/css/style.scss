@@ -19,3 +19,34 @@ h3 {
 @tailwind components;
 
 @tailwind utilities;
+
+.nav_link {
+  &::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    @apply bg-main;
+    transition: all 0.3s ease;
+    top: 13px;
+    left: 0;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    @apply bg-main;
+    transition: all 0.3s ease;
+    bottom: 10px;
+    right: 0;
+  }
+  &:hover {
+    &::before {
+      width: 80%;
+    }
+    &::after {
+      width: 80%;
+    }
+  }
+}
