@@ -9,6 +9,7 @@
                 <p class="text-gray-600">
                     We are Intercot Home Collection, Textile Industrial Company based on Suez Freezone Area, Ataka, Suez, Egypt.
                 </p>
+                <img class="bg-white p-1 mt-4 rounded rounded-sm" src="<?php echo get_template_directory_uri() ?>/assets/img/iso.jpg" alt="">
             </div>
             <!-- END Footer Card  -->
             <!-- START footer card  -->
@@ -37,8 +38,18 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                             </svg>
                         </span> <span>
-                            <a class="hover:text-main" href="tel:00201008846188">+201008846188</a> |
-                            <a class="hover:text-main" href="tel:00201228838549">+201228838549</a>
+                            <a class="hover:text-main" href="tel:00201094993034">+201094993034</a> |
+                            <a class="hover:text-main" href="tel:00201000666480">+201000666480</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center  mb-2">
+                        <span class=" w-4 h-4 mr-2 inline-block">
+                            <svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+
+                        </span> <span>
+                            <a class="hover:text-main" href="tel:0020623230274">+20623230274</a>
                         </span>
                     </li>
                     <li class="flex items-center  mb-2">
@@ -107,13 +118,14 @@
                     © 2020 INTERCOT HOME COLLECTION.
                 </small>
             </div>
-            <div class="inline-flex sm:ml-auto sm:mt-2 mt-0 justify-center sm:justify-start">
-                <a href="https://www.facebook.com/Mona-Al-Mokdad-102105988329631/" class="text-gray-600">
+            <div class="inline-flex sm:ml-auto sm:mt-2 mt-0 justify-center items-center sm:justify-start">
+                <span class="text-sm text-main mr-2"> Follow Us On </span>
+                <a href="https://www.facebook.com/Mona-Al-Mokdad-102105988329631/" class="text-white">
                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-4" viewBox="0 0 24 24">
                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/mona.al.mokdad/" class="ml-3 text-gray-600">
+                <a href="https://www.instagram.com/mona.al.mokdad/" class="ml-3 text-white">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-4" viewBox="0 0 24 24">
                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                         <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>

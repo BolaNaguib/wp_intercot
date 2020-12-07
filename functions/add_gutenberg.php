@@ -35,6 +35,7 @@ function my_acf_init()
         add_guttenberg_block('contacticons');
         add_guttenberg_block('map');
         add_guttenberg_block('products');
+        add_guttenberg_block('miniproduct');
         add_guttenberg_block('whyus');
     }
 }

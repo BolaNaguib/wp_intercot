@@ -97,7 +97,7 @@
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/'>Home</a>
                             </li>
                             <li class="inline-block">
-                                <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='#'>About Us</a>
+                                <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/about-us'>About Us</a>
                             </li>
                             <li class="inline-block">
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/products'>Products</a>

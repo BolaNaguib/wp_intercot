@@ -6,7 +6,7 @@
         </div>
         <div class="grid lg:grid-cols-3 gap-12">
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white relative h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
@@ -19,7 +19,7 @@
 
             </div>
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
@@ -32,7 +32,7 @@
 
             </div>
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
@@ -45,7 +45,7 @@
 
             </div>
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
@@ -58,7 +58,7 @@
 
             </div>
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
@@ -71,7 +71,7 @@
 
             </div>
             <div class='relative group '>
-                <a href="#">
+                <a href="/product">
 
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
                     <div class='bg-white h-full group-hover:bg-black relative overflow-hidden p-2 rounded rounded-lg z-10 shadow shadow-lg text-center'>
