@@ -21,11 +21,11 @@ if (!is_front_page()) : ?>
     <?php /* Start the Loop */ ?>
     <?php while (have_posts()) : the_post(); ?>
 
-        <section class="py-32">
+        <section class="py-32" x-data="{ selectedImage: '<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg' }">
             <div class="container mx-auto">
 
                 <div class=" gap-6 grid lg:grid-cols-2 ">
-                    <div class="flex flex-col-reverse sm:flex-row-reverse lg:flex-row justify-between px-5" x-data="{ selectedImage: '<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg' }">
+                    <div class="flex flex-col-reverse sm:flex-row-reverse lg:flex-row justify-between px-5">
                         <div class="sm:pl-5 md:pl-4 lg:pl-0 lg:pr-2 xl:pr-3 flex flex-row sm:flex-col">
 
                             <div class="w-28 sm:w-32 lg:w-24 xl:w-28 relative pb-5 mr-3 sm:pr-0">
@@ -85,7 +85,26 @@ if (!is_front_page()) : ?>
                         <p class="leading-relaxed my-4">Like many types of hard cheese, The most common Rumi cheese suffers in Egypt from the spread of fungi and many microbes. That causes it to corrupt during manufacturing, settlement and trading periods which may last for several months. It is an edible antimicrobial film and can be applied </p>
 
                         <span class="block mb-4"> <b class='text-main'>Category : </b> Products, Covers </span>
-                        <span class="block mb-4"> <b class='text-main'>Colors : </b> Red, Green, Blue </span>
+                        <span class="block mb-4"> <b class='text-main'>Packing : </b> PAcking Detailes </span>
+                        <span class="block mb-4"> <b class='text-main'>Sizes : </b> Small, Medium, Large </span>
+                        <span class="block mb-4"> <b class='text-main'>Available Colors : </b></span>
+
+
+                        <div class="grid lg:grid-cols-6 grid-cols-4 gap-2 lg:gap-6 mb-4">
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x2.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x3.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x2.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x3.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x2.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x3.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x2.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+                            <div class="text-center flex justify-center"><img class="h-24 rounded rounded-md" src="<?php echo get_template_directory_uri() ?>/assets/img/x3.jpg" @click="selectedImage = $event.target.src" alt=""> </div>
+
+                        </div>
                         <span class="block mb-4"> <b class='text-main'>Made In : </b> Egypt </span>
 
 

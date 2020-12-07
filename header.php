@@ -103,6 +103,9 @@
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/products'>Products</a>
                             </li>
                             <li class="inline-block">
+                                <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/products'>New Collections</a>
+                            </li>
+                            <li class="inline-block">
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/contact-us'>Contact Us</a>
                             </li>
                             <?php if (have_rows('menu', 'options')) : ?>
