@@ -9039,7 +9039,6 @@ h3{font-size:1.125rem}
 }@media(min-width:640px) and (min-width:768px){.sm\:container{max-width:768px}
 }@media(min-width:640px) and (min-width:1024px){.sm\:container{max-width:1024px}
 }@media(min-width:640px) and (min-width:1280px){.sm\:container{max-width:1280px}
-}@media(min-width:768px) and (min-width:1280px){.md\:container{max-width:1280px}
 }@media(min-width:768px){.container{max-width:768px}
 .md\:container{width:100%}
 .md\:prose{color:#4a5568;max-width:65ch}
@@ -13300,9 +13299,10 @@ h3{font-size:1.125rem}
 .md\:animate-ping{-webkit-animation:ping 1s cubic-bezier(0,0,0.2,1) infinite;animation:ping 1s cubic-bezier(0,0,0.2,1) infinite}
 .md\:animate-pulse{-webkit-animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite}
 .md\:animate-bounce{-webkit-animation:bounce 1s infinite;animation:bounce 1s infinite}
-}@media(min-width:768px) and (min-width:1024px){.md\:container{max-width:1024px}
 }@media(min-width:768px) and (min-width:640px){.md\:container{max-width:640px}
 }@media(min-width:768px) and (min-width:768px){.md\:container{max-width:768px}
+}@media(min-width:768px) and (min-width:1024px){.md\:container{max-width:1024px}
+}@media(min-width:768px) and (min-width:1280px){.md\:container{max-width:1280px}
 }@media(min-width:1024px){.container{max-width:1024px}
 .lg\:container{width:100%}
 .lg\:prose{color:#4a5568;max-width:65ch}
