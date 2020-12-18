@@ -14,7 +14,7 @@ if (!is_front_page()) : ?>
             </div>
         </div>
     </section>
-<?php endif; ?>
+                          <?php endif; ?>
 
 
 <?php if (have_posts()) : ?>

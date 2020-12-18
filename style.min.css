@@ -4765,6 +4765,7 @@ h3{font-size:1.125rem}
 .animate-ping{-webkit-animation:ping 1s cubic-bezier(0,0,0.2,1) infinite;animation:ping 1s cubic-bezier(0,0,0.2,1) infinite}
 .animate-pulse{-webkit-animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;animation:pulse 2s cubic-bezier(0.4,0,0.6,1) infinite}
 .animate-bounce{-webkit-animation:bounce 1s infinite;animation:bounce 1s infinite}
+.svgicon svg{width:6rem;height:6rem;border-radius:.25rem;border-radius:9999px;--bg-opacity:1;background-color:#47aa9d;background-color:rgba(71,170,157,var(--bg-opacity));--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity));-webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);box-shadow:0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);-webkit-box-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);box-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);padding:1rem;display:inline-block}
 .nav_link::before{content:'';position:absolute;height:2px;width:0;--bg-opacity:1;background-color:#47aa9d;background-color:rgba(71,170,157,var(--bg-opacity));-webkit-transition:all .3s ease;transition:all .3s ease;top:13px;left:0}
 .nav_link::after{content:'';position:absolute;height:2px;width:0;--bg-opacity:1;background-color:#47aa9d;background-color:rgba(71,170,157,var(--bg-opacity));-webkit-transition:all .3s ease;transition:all .3s ease;bottom:10px;right:0}
 .nav_link:hover::before{width:80%}

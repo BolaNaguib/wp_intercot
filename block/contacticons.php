@@ -1,26 +1,34 @@
+<?php 
+// ACF FIELDS 
+$block_title = get_field('block_title') ? get_field('block_title') : 'Service Perfection';
+?>
 <!-- Icons Section -->
 <section class='bg-gray-100 py-24'>
     <div class="container mx-auto">
-
+    <div class="text-center block mb-12">
+        <h2 class="text-4xl font-bold text-gray-900"><?php echo $block_title ?></h2>
+        </div>
         <div class="grid lg:grid-cols-3 gap-12 mt-12">
+        <?php if (have_rows('card')) : ?>
+<?php while (have_rows('card')) : the_row(); 
+//ACF Fields
+$icon = get_sub_field('icon') ? get_sub_field('icon') : '<svg class="" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>';
+$title = get_sub_field('title') ? get_sub_field('title') : 'High Quality';
+$caption = get_sub_field('caption') ? get_sub_field('caption') : 'We pays special attention to quality of raw materials and also to all styles of production in order to meet these high standards and offer high quality products.';
 
+?>
             <div class='relative group '>
                 <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
-                <div class='bg-white h-full   group-hover:bg-black relative px-4 py-8 rounded rounded-lg z-10 shadow shadow-lg text-center'>
-
-                    <svg class="w-24 h-24 rounded rounded-full bg-main text-white shadow shadow-lg p-4 inline-block" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" class=""></path>
-                    </svg>
-                    <h3 class='text-2xl my-4 font-bold'>Call Us</h3>
-                    <span>
-                        <a class="hover:text-main" href="tel:00201008846188">+201008846188</a> |
-                        <a class="hover:text-main" href="tel:00201228838549">+201228838549</a>
-                    </span>
+                <div class='bg-white h-full svgicon group-hover:bg-black relative px-4 py-8 rounded rounded-lg z-10 shadow shadow-lg text-center'>
+                    <?php echo $icon ?>
+                    <h3 class='text-2xl my-4 font-bold'><?php echo $title ?></h3>
+                    <p><?php echo $caption ?></p>
                 </div>
 
 
             </div>
-
+            <?php endwhile; ?>
+<?php endif; ?>
 
             <div class='relative group '>
                 <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-3 transition duration-300 ease-in-out group-hover:rotate-0 rounded rounded-lg  "></span>
