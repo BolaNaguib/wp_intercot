@@ -23,6 +23,9 @@ h3 {
 .svgicon svg {
   @apply w-24 h-24 rounded rounded-full bg-main text-white shadow shadow-lg p-4 inline-block;
 }
+.svgiconv2 svg {
+  @apply w-20 h-20 rounded rounded-full bg-main text-white shadow shadow-lg p-4 inline-block;
+}
 
 .nav_link {
   &::before {

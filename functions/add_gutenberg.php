@@ -37,6 +37,7 @@ function my_acf_init()
         add_guttenberg_block('products');
         add_guttenberg_block('miniproduct');
         add_guttenberg_block('whyus');
+        add_guttenberg_block('mapwithform');
     }
 }
 function add_guttenberg_block($blockname)
@@ -53,7 +54,7 @@ function add_guttenberg_block($blockname)
     ));
 }
 
-/*********************************************
+/**********************************************
  *               Blocks Callback              *
  **********************************************/
 function section_block_callback($block)
