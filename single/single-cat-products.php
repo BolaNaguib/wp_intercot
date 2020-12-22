@@ -10,7 +10,7 @@ if (!is_front_page()) : ?>
             <div class="relative text-center z-40 bg-white shadow-xl py-4 lg:py-8 px-8 lg:px-32 transform translate-y-32 lg:translate-y-40 rounded">
                 <h1 class="text-3xl lg:text-4xl"><?php the_title(); ?></h1>
                 <div class="breadcrumb text-sm lg:text-base text-gray-600">
-                    <!-- <?php get_breadcrumb(); ?> -->
+                    <?php get_breadcrumb(); ?>
                 </div>
             </div>
         </div>
