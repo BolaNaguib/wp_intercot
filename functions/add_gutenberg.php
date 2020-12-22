@@ -38,6 +38,7 @@ function my_acf_init()
         add_guttenberg_block('miniproduct');
         add_guttenberg_block('whyus');
         add_guttenberg_block('mapwithform');
+        add_guttenberg_block('counters');
     }
 }
 function add_guttenberg_block($blockname)
