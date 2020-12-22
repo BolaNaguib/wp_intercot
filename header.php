@@ -10,15 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            font-family: 'Poppins', sans-serif;
-            font-weight: semi-bold;
 
-        }
-
-        .iframe iframe {
-            width: 100%;
-        }
     </style>
     <?php wp_head(); ?>
 </head>
