@@ -91,8 +91,8 @@ if (!is_front_page()) : ?>
                                                                                             foreach ($category as $cd) {
                                                                                                 echo $cd->cat_name . ' ';
                                                                                             } ?> </span> -->
-                        <?php if (have_rows('exta_data')) : ?>
-                            <?php while (have_rows('exta_data')) : the_row();
+                        <?php if (have_rows('extra_data')) : ?>
+                            <?php while (have_rows('extra_data')) : the_row();
                                 //ACF Fields
                                 $title = get_sub_field('title') ? get_sub_field('title') : 'Packing';
                                 $info = get_sub_field('info') ? get_sub_field('info') : 'PAcking Detailes';
