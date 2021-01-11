@@ -66,23 +66,6 @@ if (!is_front_page()) : ?>
                         <div class="flex my-2 justify-between">
                             <!-- <span class="title-font font-medium text-2xl text-secondary">$100</span> -->
 
-                            <span class="flex items-center text-main">
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 " viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 " viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 " viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 " viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 " viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                            </span>
 
                         </div>
                         <p class="leading-relaxed my-4"><?php echo $content ?></p>
@@ -109,7 +92,7 @@ if (!is_front_page()) : ?>
                                     $image = get_sub_field('image');
                                 ?>
                                     <div class="text-center flex justify-center">
-                                        <img class="h-24 rounded rounded-md" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>" @click="selectedImage = $event.target.src">
+                                        <img class="h-24 rounded rounded-md" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
                                     </div>
                                 <?php endwhile; ?>
                             <?php endif; ?>
