@@ -455,7 +455,6 @@ h3{font-size:1.125rem}
 .gap-6{grid-gap:1.5rem;gap:1.5rem}
 .gap-12{grid-gap:3rem;gap:3rem}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
-.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
 .grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}
 .col-span-2{grid-column:span 2 / span 2}
@@ -496,6 +495,12 @@ h3{font-size:1.125rem}
 .iframe iframe{width:100%}
 .wp-block{max-width:unset !important}
 table.fixed{position:unset !important}
+#dropDownMenu{-webkit-transform:scale(0);transform:scale(0);-webkit-transition:500ms;transition:500ms}
+#dropDownMenu.showModal{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:500ms;transition:500ms}
+#dropDownMenu{-webkit-transform:scale(0);transform:scale(0);-webkit-transition:500ms;transition:500ms}
+#dropDownMenu.showDropDownMenu{-webkit-transform:scale(1);transform:scale(1);-webkit-transition:500ms;transition:500ms}
+.subPhoneDropdown{display:block;height:0;overflow:hidden;-webkit-transition:300ms;transition:300ms}
+.subPhoneDropdown.open{height:100%;-webkit-transition:300ms;transition:300ms}
 @media(min-width:640px){.container{max-width:640px}
 .sm\:container{width:100%}
 .sm\:prose{color:#4a5568;max-width:65ch}
@@ -1237,6 +1242,7 @@ table.fixed{position:unset !important}
 .lg\:text-4xl{font-size:2.25rem}
 .lg\:text-6xl{font-size:4rem}
 .lg\:p-2{padding:.5rem}
+.lg\:px-0{padding-left:0;padding-right:0}
 .lg\:px-2{padding-left:.5rem;padding-right:.5rem}
 .lg\:py-8{padding-top:2rem;padding-bottom:2rem}
 .lg\:px-32{padding-left:8rem;padding-right:8rem}

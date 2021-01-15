@@ -115,7 +115,7 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
     </div>
     <!-- END container -->
 </footer>
-<div class="bg-black text-white py-1">
+<div class="bg-black text-white py-1 px-4 lg:px-0">
     <div class="container mx-auto">
         <div class="flex justify-between">
             <div>
@@ -140,6 +140,30 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
         </div>
     </div>
 </div>
+
+
+
+<script>
+    function Modal(modalButtonOpen, modalButtonClose, modalContainer) {
+        console.log('cliecked');
+        const modalOpen = document.getElementById(modalButtonOpen);
+        const modalClose = document.getElementById(modalButtonClose);
+        const modalWindow = document.getElementById(modalContainer);
+        modalOpen.addEventListener('click', function() {
+            modalWindow.classList.toggle('showModal');
+            console.log('clicked');
+        })
+        modalClose.addEventListener('click', function() {
+            modalWindow.classList.toggle('showModal');
+        })
+    }
+    if (document.getElementById('videoOpen')) {
+        Modal('videoOpen', 'videoClose', 'videoContainer');
+
+    }
+    Modal('mainmenu', 'menuCloseButton', 'dropDownMenu');
+    Modal('Services', 'servicesCloseButton', 'servicesContainer');
+</script>
 <?php wp_footer(); ?>
 </body>
 

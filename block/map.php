@@ -4,7 +4,7 @@ $block_title = get_field('block_title') ? get_field('block_title') : 'Find Us';
 $map = get_field('map') ? get_field('map') : '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27668.35345959953!2d32.449042!3d29.906232000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x669ce6f62b7d2d55!2sIntercot%20Home%20Collection!5e0!3m2!1sen!2sus!4v1606207646734!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
 ?>
 <!-- Map -->
-<section class="py-24 bg-gray-100">
+<section class="py-24 bg-gray-100  px-4 lg:px-0">
     <div class="text-center relative block mb-12">
         <div class="relative inline-block">
             <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $block_title ?></h2>
@@ -24,5 +24,3 @@ $map = get_field('map') ? get_field('map') : '<iframe src="https://www.google.co
 
     </div>
 </section>
-
-

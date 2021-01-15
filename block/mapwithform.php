@@ -5,12 +5,12 @@ $map = get_field('map') ? get_field('map') : '<iframe src="https://www.google.co
 $form_title = get_field('form_title') ? get_field('form_title') : 'Get a Quote';
 $form = get_field('form') ? get_field('form') : '[contact-form-7 id="107" title="Contact form 1"]';
 ?>
-<!-- Map -->
-<section class="py-24 bg-gray-100">
+<!-- Map With Form -->
+<section class="py-24 bg-gray-100  px-4 lg:px-0">
 
-    <div class="container mx-auto relative ">
+    <div class="container mx-auto relative">
 
-        <div class="grid grid-cols-3 gap-6 ">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
             <div class="col-span-2 relative text-center">
                 <div class="relative inline-block z-30  my-8">
                     <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $map_title ?></h2>

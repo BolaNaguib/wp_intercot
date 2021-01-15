@@ -5,7 +5,7 @@ $term = get_field('products_category');
 
 ?>
 <!-- Products Section -->
-<section class='bg-gray-100 py-24'>
+<section class='bg-gray-100 py-24  px-4 lg:px-0'>
     <div class="container mx-auto">
         <div class="text-center block mb-12">
             <h2 class="text-4xl font-bold text-gray-900"><?php echo $block_name ?></h2>

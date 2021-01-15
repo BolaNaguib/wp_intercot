@@ -5,8 +5,8 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
 ?>
 <!-- Countries Flags -->
 <section class="py-24 bg-gray-200">
-    <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-6">
+    <div class="container mx-auto px-4 lg:px-0">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div class="col-span-2 text-center">
                 <div class="relative inline-block z-30  my-8">
                     <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $countries_title ?></h2>

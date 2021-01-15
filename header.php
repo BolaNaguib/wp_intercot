@@ -193,15 +193,16 @@
 
                         ?>
                             <li>
-                                <a class="block font-semibold px-3 py-2 text-gray-700 hover:text-white hover:bg-main transition duration-300 ease-in-out px-2" href="<?php echo $page_link ?>"><?php echo $page_title ?></a></li>
+                                <a class="block font-semibold px-3 py-2 text-gray-700 hover:text-white hover:bg-main transition duration-300 ease-in-out px-2" href="<?php echo $page_link ?>"><?php echo $page_title ?></a>
+                            </li>
 
                         <?php endwhile; ?>
 
                     <?php endif; ?>
-                    <li>
+                    <!-- <li>
                         <a href="<?php echo $cta_link ?>" class=" text-center bg-main px-4 py-2 text-white hover:bg-gray-800 transition duration-500 ease-in-out font-semibold text-sm block">
                             <?php echo $cta_text ?></a>
-                    </li>
+                    </li> -->
 
                 </ul>
                 <!-- <div>
