@@ -455,8 +455,8 @@ h3{font-size:1.125rem}
 .gap-6{grid-gap:1.5rem;gap:1.5rem}
 .gap-12{grid-gap:3rem;gap:3rem}
 .grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}
+.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}
 .col-span-2{grid-column:span 2 / span 2}
 .col-span-3{grid-column:span 3 / span 3}
 .transform{--transform-translate-x:0;--transform-translate-y:0;--transform-rotate:0;--transform-skew-x:0;--transform-skew-y:0;--transform-scale-x:1;--transform-scale-y:1;-webkit-transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));transform:translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y))}

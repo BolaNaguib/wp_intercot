@@ -15,7 +15,7 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                 <div class="relative p-6">
                     <span class="bg-main inline-block absolute top-0 left-0 w-full h-full transform z-0  rotate-1  rounded rounded-lg"></span>
                     <div class="bg-white absolute top-0 left-0 w-full h-full z-10 rounded rounded-lg shadow shadow-lg"></div>
-                    <div class="relative z-30  grid grid-cols-6 gap-6">
+                    <div class="relative z-30  grid  grid-cols-3 lg:grid-cols-6 gap-6">
                         <?php if (have_rows('countries')) : ?>
                             <?php while (have_rows('countries')) : the_row();
                                 //ACF Fields
@@ -61,28 +61,6 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                             </figcaption>
                         <?php endwhile; ?>
                     <?php endif; ?>
-
-                    <figcaption class="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold">
-                        <div class="relative ">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-main opacity-25 z-0">
-                            </span>
-                            <div class="flex-none w-20 h-20 bg-main text-white rounded-full flex items-center justify-center relative z-30  shadow shadow-lg">
-                                120
-                            </div>
-                        </div>
-
-                        <div class="flex-auto">Exporting Number per Year</div>
-                    </figcaption>
-                    <figcaption class="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold">
-                        <div class="relative ">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-main opacity-25 z-0">
-                            </span>
-                            <div class="flex-none w-20 h-20 bg-main text-white rounded-full flex items-center justify-center relative z-30  shadow shadow-lg">
-                                999
-                            </div>
-                        </div>
-                        <div class="flex-auto">Exporting Number per Month</div>
-                    </figcaption>
                 </div>
 
             </div>
