@@ -5,7 +5,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <?php
+    $meta_description = get_field('meta_description');
+    $meta_title = get_field('meta_title') ?>
+
+    <?php if (!is_front_page()) : ?>
+        <title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <?php else : ?>
+        <title><?php bloginfo('name'); ?> | <?php bloginfo('description') ?></title>
+
+    <?php endif; ?>
+    <meta name="title" content=" <?php echo $meta_title ? $meta_title : bloginfo('name') ?> " />
+    <meta name="description" content=" <?php echo $meta_description ? $meta_description : bloginfo('description'); ?> " />
+    <meta name="keywords" content=" <?php the_field('meta_keywords'); ?> " />
+    <link rel="shortcut icon" type="image/x-icon" href="<?php the_field('favicon', 'option') ?>" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
