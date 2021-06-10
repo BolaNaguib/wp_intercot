@@ -85,7 +85,7 @@
                     </div>
                     <div class="hidden col-span-3 lg:flex items-center  justify-end ">
                         <ul class="hidden  lg:block">
-                            <li class="inline-block">
+                            <!-- <li class="inline-block">
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/'>Home</a>
                             </li>
                             <li class="inline-block">
@@ -99,7 +99,7 @@
                             </li>
                             <li class="inline-block">
                                 <a class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" href='/contact-us'>Contact Us</a>
-                            </li>
+                            </li> -->
                             <?php if (have_rows('menu', 'options')) : ?>
                                 <?php while (have_rows('menu', 'options')) : the_row();
                                     //ACF Fields
