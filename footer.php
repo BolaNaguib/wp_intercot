@@ -164,6 +164,52 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
     Modal('mainmenu', 'menuCloseButton', 'dropDownMenu');
     Modal('Services', 'servicesCloseButton', 'servicesContainer');
 </script>
+<?php
+global $post;
+
+$args = array('child_of' => $post->post_parent, 'exclude' => $post->ID);
+if ($post->post_parent) $pages = get_pages($args);
+
+if ($pages) :
+
+    //store the $temp variable
+    $temp = $post;
+
+    $siblings = '<ul>';
+
+    foreach ($pages as $post) : setup_postdata($post);
+
+        $siblings .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+    endforeach;
+
+    //restore the $post variable
+    $post = $temp;
+
+    $siblings .= '</ul>';
+
+    echo $siblings;
+
+endif;
+?>
+<script>
+    var here = location.href.split('/').slice(3);
+
+    var parts = [{
+        "text": 'Home',
+        "link": '/'
+    }];
+
+    for (var i = 0; i < here.length; i++) {
+        var part = here[i];
+        var text = part.toUpperCase();
+        var link = '/' + here.slice(0, i + 1).join('/');
+        parts.push({
+            "text": text,
+            "link": link
+        });
+    }
+    console.log(parts);
+</script>
 <?php wp_footer(); ?>
 </body>
 
