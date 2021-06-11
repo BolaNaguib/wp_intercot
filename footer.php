@@ -164,33 +164,33 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
     Modal('mainmenu', 'menuCloseButton', 'dropDownMenu');
     Modal('Services', 'servicesCloseButton', 'servicesContainer');
 </script>
-<?php
-global $post;
+<!-- <?php
+        global $post;
 
-$args = array('child_of' => $post->post_parent, 'exclude' => $post->ID);
-if ($post->post_parent) $pages = get_pages($args);
+        $args = array('child_of' => $post->post_parent, 'exclude' => $post->ID);
+        if ($post->post_parent) $pages = get_pages($args);
 
-if ($pages) :
+        if ($pages) :
 
-    //store the $temp variable
-    $temp = $post;
+            //store the $temp variable
+            $temp = $post;
 
-    $siblings = '<ul>';
+            $siblings = '<ul>';
 
-    foreach ($pages as $post) : setup_postdata($post);
+            foreach ($pages as $post) : setup_postdata($post);
 
-        $siblings .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-    endforeach;
+                $siblings .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+            endforeach;
 
-    //restore the $post variable
-    $post = $temp;
+            //restore the $post variable
+            $post = $temp;
 
-    $siblings .= '</ul>';
+            $siblings .= '</ul>';
 
-    echo $siblings;
+            echo $siblings;
 
-endif;
-?>
+        endif;
+        ?> -->
 <script>
     var here = location.href.split('/').slice(3);
 
