@@ -40,6 +40,7 @@ function my_acf_init()
         add_guttenberg_block('mapwithform');
         add_guttenberg_block('counters');
         add_guttenberg_block('timeline');
+        add_guttenberg_block('categories');
     }
 }
 function add_guttenberg_block($blockname)
