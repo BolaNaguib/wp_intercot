@@ -68,7 +68,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "all"
+                "value": "acf\/categories"
             }
         ]
     ],
@@ -80,5 +80,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1623416705
+    "modified": 1623417008
 }
