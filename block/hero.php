@@ -12,7 +12,7 @@ $background = get_field('background');
     background-position: center center;">
     <div class="z-30 bg-black w-full h-full absolute opacity-75 ">
     </div>
-    <img loading="lazy" class="object-cover w-full h-full absolute z-20" <?php if ($background) : ?> src="<?php echo $background['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/bedx.jpg" <?php endif; ?> alt="<?php echo $background['alt'] ?>" title="<?php echo $background['title'] ?>">
+    <img loading="lazy" class="object-cover w-full h-full absolute z-20" <?php if ($background) : ?> src="<?php echo $background['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/bedx.jpg" <?php endif; ?>  >
     <div class="container mx-auto px-4 text-white font-semibold h-full flex items-center relative z-40">
         <div class="grid gap-6 lg:grid-cols-3 flex items-center">
             <div class="lg:col-span-2">

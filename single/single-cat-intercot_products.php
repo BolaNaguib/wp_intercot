@@ -9,7 +9,10 @@ if (!is_front_page()) : ?>
         <div class="container mx-auto py-24 flex justify-center">
             <div class="relative text-center z-40 bg-white shadow-xl py-4 lg:py-8 px-8 lg:px-32 transform translate-y-32 lg:translate-y-40 rounded">
                 <h1 class="text-3xl lg:text-4xl"><?php the_title(); ?></h1>
+         <div class="breadcrumb text-sm lg:text-base text-gray-600">
+									<?php if (function_exists('the_breadcrumb')) the_breadcrumb(); ?>
 
+                </div> 
             </div>
         </div>
     </section>
@@ -58,7 +61,7 @@ if (!is_front_page()) : ?>
                     <div class="pt-12 sm:pt-16 lg:pt-0 px-5">
                         <h2 class="text-sm title-font text-gray-500 tracking-widest"><?php
                                                                                         foreach ($category as $cd) {
-                                                                                            echo $cd->cat_name . ' ';
+                                                                                            echo $cd->cat_name . ' / ';
                                                                                         } ?></h2>
                         <h1 class="text-gray-900 text-3xl title-font font-medium "><?php echo $title ?> </h1>
                         <div class="flex my-2 justify-between">

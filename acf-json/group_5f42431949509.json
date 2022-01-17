@@ -152,44 +152,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fe0b28cb449d",
-            "label": "Phone Display 3",
-            "name": "phone_display_3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5fe0b28fb449e",
-            "label": "Phone 3",
-            "name": "phone_3",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5f4243231a003",
             "label": "Social Media",
             "name": "",
@@ -259,7 +221,8 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1608561353
+    "show_in_rest": 0,
+    "modified": 1640675930
 }

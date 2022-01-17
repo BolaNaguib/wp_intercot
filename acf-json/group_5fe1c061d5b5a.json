@@ -227,7 +227,21 @@
             {
                 "param": "post_category",
                 "operator": "==",
-                "value": "category:products"
+                "value": "category:intercot_products"
+            }
+        ],
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:intercot_products"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
             }
         ]
     ],
@@ -239,5 +253,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1608631790
+    "show_in_rest": 0,
+    "modified": 1642235892
 }

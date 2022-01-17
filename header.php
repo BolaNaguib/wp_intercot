@@ -19,7 +19,7 @@
     <meta name="description" content=" <?php echo $meta_description ? $meta_description : bloginfo('description'); ?> " />
     <meta name="keywords" content=" <?php the_field('meta_keywords'); ?> " />
     <link rel="shortcut icon" type="image/x-icon" href="<?php the_field('favicon', 'option') ?>" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -118,10 +118,12 @@
                                     //ACF Fields
                                     $page_title = get_sub_field('page_title');
                                     $page_link = get_sub_field('page_link');
+                                    $iscategory = get_sub_field('iscategory');
+                                    $category_link = get_sub_field('category_link');
 
                                 ?>
                                     <li class="inline-block">
-                                        <a id='<?php echo $page_title ?>' class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" <?php if ($page_title !== 'Services') : ?> href='<?php echo $page_link ?>' <?php endif; ?>><?php echo $page_title ?></a>
+                                        <a id='<?php echo $page_title ?>' class="nav_link text-white relative hover:text-white transition duration-300 ease-in-out px-2 py-4" <?php if ($iscategory  ) : ?> href='<?php echo  get_category_link( $category_link ) ?>'  <?php else: ?> href='<?php  echo $page_link  ?>'  <?php endif; ?> ><?php echo $page_title ?></a>
                                     </li>
 
                                 <?php endwhile; ?>
