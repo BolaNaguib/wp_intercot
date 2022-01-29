@@ -66,7 +66,7 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
                             </svg>
 
                         </span> <span>
-                            <a class="hover:text-main" href="tel:<?php echo $phone_3 ?>"><?php echo $phone_display_2 ?></a>
+                            <a class="hover:text-main" href="tel:<?php echo $phone_3 ?>"><?php echo $phone_display_3 ?></a>
                         </span>
                     </li>
                     <li class="flex items-center  mb-2">

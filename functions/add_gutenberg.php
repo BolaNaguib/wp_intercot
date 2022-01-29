@@ -41,6 +41,7 @@ function my_acf_init()
         add_guttenberg_block('counters');
         add_guttenberg_block('timeline');
         add_guttenberg_block('categories');
+        add_guttenberg_block('chairman');
     }
 }
 function add_guttenberg_block($blockname)

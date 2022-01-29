@@ -12,7 +12,7 @@ $caption = get_field('caption') ? get_field('caption') : 'We are Intercot Home C
         <div class="grid lg:grid-cols-2 relative z-20 flex items-center">
 
             <div class="text-center flex justify-center py-8">
-                <img class="inline-block" src="<?php echo $logo ? $logo['url'] : get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="<?php echo $logo['alt'] ?>" title="<?php echo $logo['title'] ?>">
+                <img class="inline-block" src="<?php echo $logo ? $logo['url'] : get_template_directory_uri(); ?>/assets/img/logo-white.png" alt="image" >
             </div>
             <div class='p-8 lg:p-2'>
                 <div class="text-white text-center lg:text-left">
