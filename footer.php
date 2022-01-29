@@ -90,9 +90,11 @@ $col3_title = get_field('col3_title', 'options') ? get_field('col3_title', 'opti
                             //ACF Fields
                             $page_link = get_sub_field('page_link') ? get_sub_field('page_link') : '#';
                             $page_title = get_sub_field('page_title') ? get_sub_field('page_title') : 'Home';
+                                $iscategory = get_sub_field('iscategory');
+                                    $category_link = get_sub_field('category_link');
                         ?>
                             <li>
-                                <a href="" class="text-white hover:text-secondary"><?php echo $page_title ?></a>
+                                <a  class="text-white hover:text-main" <?php if ($iscategory  ) : ?> href='<?php echo  get_category_link( $category_link ) ?>'  <?php else: ?> href='<?php  echo $page_link  ?>'  <?php endif; ?>><?php echo $page_title ?></a>
                             </li>
 
                         <?php endwhile; ?>
