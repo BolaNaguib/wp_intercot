@@ -6,7 +6,7 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
 <!-- Countries Flags -->
 <section class="py-24 bg-gray-200">
     <div class="container mx-auto px-4 lg:px-0">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1  gap-6">
             <div class="col-span-2 text-center">
                 <div class="relative inline-block z-30  my-8">
                     <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $countries_title ?></h2>
@@ -42,14 +42,14 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                     <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $counters_title ?></h2>
                     <hr class="w-full opacity-50 mx-auto border-main border-8 absolute bottom-0 left-0 -ml-2 mb-2 z-0 ">
                 </div>
-                <div class="relative text-left">
+                <div class="relative text-left grid grid-cols-3 gap-6">
                     <?php if (have_rows('counters')) : ?>
                         <?php while (have_rows('counters')) : the_row();
                             //ACF Fields
                             $count = get_sub_field('count') ? get_sub_field('count') : '100';
                             $name = get_sub_field('name') ? get_sub_field('name') : 'Name';
                         ?>
-                            <figcaption class="flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold">
+                            <figcaption class="flex flex-col items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold">
                                 <div class="relative ">
                                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-main opacity-25 z-0">
                                     </span>
@@ -57,7 +57,7 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                                         <?php echo $count ?>
                                     </div>
                                 </div>
-                                <div class="flex-auto"><?php echo $name ?></div>
+                                <div class="flex-auto mt-8"><?php echo $name ?></div>
                             </figcaption>
                         <?php endwhile; ?>
                     <?php endif; ?>
