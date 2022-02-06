@@ -26,7 +26,7 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                                     <div class=" flex justify-center">
                                         <img class="block" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/uk.png" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
                                     </div>
-                                    <small class="block text-xs font-semibold text-gray-600 tracking-wider"><?php echo $name ?></small>
+                                    <small class="block text-xs font-semibold text-gray-600 tracking-wider mt-4"><?php echo $name ?></small>
 
 
                                 </div>
@@ -42,7 +42,7 @@ $counters_title = get_field('counters_title') ? get_field('counters_title') : 'S
                     <h2 class="text-4xl font-bold text-black relative z-10"><?php echo $counters_title ?></h2>
                     <hr class="w-full opacity-50 mx-auto border-main border-8 absolute bottom-0 left-0 -ml-2 mb-2 z-0 ">
                 </div>
-                <div class="relative text-left grid grid-cols-3 gap-6">
+                <div class="relative text-left grid-cols-1 lg:grid grid-cols-3 gap-6">
                     <?php if (have_rows('counters')) : ?>
                         <?php while (have_rows('counters')) : the_row();
                             //ACF Fields

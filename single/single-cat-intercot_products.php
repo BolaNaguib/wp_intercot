@@ -34,8 +34,16 @@ if (!is_front_page()) : ?>
         <section class="py-32" <?php if ($thumbnail) : ?> x-data="{ selectedImage: '<?php echo $thumbnail ?>' }" <?php else : ?> x-data="{ selectedImage: '<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg' }" <?php endif; ?>>
             <div class="container mx-auto">
                 <div class=" gap-6 grid lg:grid-cols-2 ">
-                    <div class="flex flex-col-reverse sm:flex-row-reverse lg:flex-row justify-between px-5">
-                        <div class="sm:pl-5 md:pl-4 lg:pl-0 lg:pr-2 xl:pr-3 flex flex-row sm:flex-col">
+                    <div class="flex flex-col  px-5">
+               
+                        <div class="w-full sm:w-96 lg:w-80 xl:w-90 relative pb-5 sm:pb-0">
+                            <div class="bg-v-pink border border-grey relative h-80 sm:h-94 xl:h-96 rounded flex items-center justify-center">
+
+                                <img class="w-full" :src="selectedImage" <?php if ($thumbnail) : ?> <?php echo $thumbnail ?> <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif ?> alt="">
+                            </div>
+                         
+                        </div>
+                                 <div class="sm:pl-5 md:pl-4 lg:pl-0 lg:pr-2 xl:pr-3 flex flex-row mt-4">
                             <?php if (have_rows('top_gallery_images')) : ?>
                                 <?php while (have_rows('top_gallery_images')) : the_row();
                                     //ACF Fields
@@ -44,18 +52,12 @@ if (!is_front_page()) : ?>
                                 ?>
                                     <div class="w-28 sm:w-32 lg:w-24 xl:w-28 relative pb-5 mr-3 sm:pr-0">
                                         <div class="bg-v-pink border border-grey relative h-28 rounded flex items-center justify-center">
-                                            <img <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>" @click="selectedImage = $event.target.src">
+                                            <img class="cursor-pointer" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>" @click="selectedImage = $event.target.src">
 
                                         </div>
                                     </div>
                                 <?php endwhile; ?>
                             <?php endif; ?>
-                        </div>
-                        <div class="w-full sm:w-96 lg:w-80 xl:w-90 relative pb-5 sm:pb-0">
-                            <div class="bg-v-pink border border-grey relative h-80 sm:h-94 xl:h-96 rounded flex items-center justify-center">
-
-                                <img class="w-full" :src="selectedImage" <?php if ($thumbnail) : ?> <?php echo $thumbnail ?> <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif ?> alt="">
-                            </div>
                         </div>
                     </div>
                     <div class="pt-12 sm:pt-16 lg:pt-0 px-5">
@@ -86,19 +88,32 @@ if (!is_front_page()) : ?>
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <span class="block mb-4"> <b class='text-main'><?php echo $gallery_title ?> : </b></span>
-                        <div class="grid lg:grid-cols-6 grid-cols-4 gap-2 lg:gap-6 mb-4">
+                       <div x-data="{ selectedImagex: '' }" >
+
+                        <div class="grid lg:grid-cols-6 grid-cols-4 gap-2 lg:gap-6 mb-4" >
                             <?php if (have_rows('gallery_images')) : ?>
                                 <?php while (have_rows('gallery_images')) : the_row();
                                     //ACF Fields
                                     $image = get_sub_field('image');
                                 ?>
                                     <div class="text-center flex justify-center">
-                                        <img class="h-24 rounded rounded-md" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
+                                        <img  @click="selectedImagex = $event.target.src" class="h-24 object-cover cursor-pointer  rounded-md" <?php if ($image) : ?> src="<?php echo $image['url'] ?>" <?php else : ?> src="<?php echo get_template_directory_uri() ?>/assets/img/x1.jpg" <?php endif; ?> alt="<?php echo $image['alt'] ?>" title="<?php echo $image['title'] ?>">
                                     </div>
                                 <?php endwhile; ?>
                             <?php endif; ?>
 
                         </div>
+                        <div>
+                                <div class="bg-v-pink border mt-4 border-grey relative h-80 sm:h-94 xl:h-96 rounded flex items-center justify-center">
+
+                                <img class="w-full" :src="selectedImagex" alt="">
+                            </div>
+                        </div>
+                       </div>
+
+
+
+
 
                     </div>
                 </div>

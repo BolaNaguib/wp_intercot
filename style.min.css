@@ -316,6 +316,7 @@ h3{font-size:1.125rem}
 .rounded-b-xl{border-bottom-right-radius:.75rem;border-bottom-left-radius:.75rem}
 .border-8{border-width:8px}
 .border{border-width:1px}
+.cursor-pointer{cursor:pointer}
 .block{display:block}
 .inline-block{display:inline-block}
 .flex{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -325,7 +326,6 @@ h3{font-size:1.125rem}
 .hidden{display:none}
 .flex-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .flex-col{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.flex-col-reverse{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
 .items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .content-center{-ms-flex-line-pack:center;align-content:center}
 .justify-end{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
@@ -749,8 +749,6 @@ table.fixed{position:unset !important}
 .sm\:prose-2xl tbody td:last-child{padding-right:0}
 .sm\:prose-2xl>:first-child{margin-top:0}
 .sm\:prose-2xl>:last-child{margin-bottom:0}
-.sm\:flex-row-reverse{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
-.sm\:flex-col{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .sm\:justify-start{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .sm\:mt-2{margin-top:.5rem}
 .sm\:ml-auto{margin-left:auto}
@@ -1247,8 +1245,8 @@ table.fixed{position:unset !important}
 .lg\:prose-2xl>:last-child{margin-bottom:0}
 .lg\:block{display:block}
 .lg\:flex{display:-webkit-box;display:-ms-flexbox;display:flex}
+.lg\:grid{display:grid}
 .lg\:hidden{display:none}
-.lg\:flex-row{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .lg\:items-center{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .lg\:flex-shrink-0{-ms-flex-negative:0;flex-shrink:0}
 .lg\:text-base{font-size:1rem}
